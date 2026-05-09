@@ -4,15 +4,15 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
+import { KAKAO_CHANNEL_URL } from "@/data/content";
 
 const NAV_ITEMS = [
-  { label: "소개", id: "why" },
-  { label: "프로그램", id: "program" },
-  { label: "대표 소개", id: "leader" },
-  { label: "FAQ", id: "faq" },
+  { label: "Community", id: "why" },
+  { label: "License Class", id: "program" },
+  { label: "Leader", id: "leader" },
+  { label: "Membership", id: "plans" },
+  { label: "OT", id: "ot" },
 ];
-
-const GOOGLE_FORM_URL = "https://forms.gle/6emzu92WCEXXiAiz5";
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -75,7 +75,7 @@ export function Header() {
           onClick={() => scrollToSection("hero")}
           className="shrink-0"
         >
-          <Image src="/logo.svg" alt="THE 12" width={80} height={20} className="h-5 w-auto" />
+          <Image src="/logo.svg" alt="GROWTH12" width={120} height={28} className="h-7 w-auto" />
         </button>
 
         {/* Desktop Nav */}
@@ -106,10 +106,10 @@ export function Header() {
           <Button
             size="sm"
             className="bg-gold hover:bg-gold-hover text-white font-bold px-5"
-            render={<a href={GOOGLE_FORM_URL} target="_blank" rel="noopener noreferrer" />}
+            render={<a href={KAKAO_CHANNEL_URL} target="_blank" rel="noopener noreferrer" />}
             nativeButton={false}
           >
-            OT 신청하기
+            G12 Join
           </Button>
         </div>
 
@@ -142,10 +142,10 @@ export function Header() {
             ))}
             <Button
               className="bg-gold hover:bg-gold-hover text-white font-bold mt-2"
-              render={<a href={GOOGLE_FORM_URL} target="_blank" rel="noopener noreferrer" />}
+              render={<a href={KAKAO_CHANNEL_URL} target="_blank" rel="noopener noreferrer" />}
               nativeButton={false}
             >
-              OT 신청하기
+              G12 Join
             </Button>
           </div>
         </div>

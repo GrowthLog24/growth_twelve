@@ -3,22 +3,22 @@ import "./globals.css";
 import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "THE 12 - 부동산 전문 파트너 네트워크",
+  title: "GROWTH12 - 부동산 협력 파트너 커뮤니티",
   description:
-    "수강생이 아닌, 미래의 협력 파트너를 찾습니다. 17년차 부동산 전문가가 직접 운영하는 강남역 오피스텔 스터디.",
+    "커뮤니티와 함께 성장할 부동산 협력 파트너를 모십니다. 17년차 부동산 전문가가 운영하는 강남역 3분거리 라운지 커뮤니티.",
   openGraph: {
-    title: "THE 12 - 부동산 전문 파트너 네트워크",
+    title: "GROWTH12 - 부동산 협력 파트너 커뮤니티",
     description:
-      "17년차 부동산 전문가가 직접 운영하는 소수 정예 실무 스터디. 공인중개사 1기 모집중.",
+      "17년차 부동산 전문가가 운영하는 부동산 커뮤니티. 공인중개사 합격 후 실무 교육·채용 연계까지. 1기 모집중.",
     images: ["/og.png"],
     type: "website",
     locale: "ko_KR",
   },
   twitter: {
     card: "summary_large_image",
-    title: "THE 12 - 부동산 전문 파트너 네트워크",
+    title: "GROWTH12 - 부동산 협력 파트너 커뮤니티",
     description:
-      "17년차 부동산 전문가가 직접 운영하는 소수 정예 실무 스터디.",
+      "17년차 부동산 전문가가 운영하는 부동산 커뮤니티. 1기 모집중.",
     images: ["/og.png"],
   },
   metadataBase: new URL("https://the12.co.kr"),

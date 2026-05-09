@@ -1,4 +1,4 @@
-import { FINAL, GOOGLE_FORM_URL } from "@/data/content";
+import { FINAL, GOOGLE_FORM_URL, KAKAO_CHANNEL_URL } from "@/data/content";
 import { renderTitle } from "@/utils/renderTitle";
 
 export function FinalSection() {
@@ -18,7 +18,7 @@ export function FinalSection() {
 
         <div data-reveal data-reveal-delay="240" className="flex flex-col sm:flex-row justify-center gap-4">
           <a
-            href={GOOGLE_FORM_URL}
+            href={KAKAO_CHANNEL_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="group relative inline-flex items-center justify-center h-14 px-10 text-base font-semibold text-white bg-gold rounded-full overflow-hidden transition-all duration-300 hover:shadow-[0_8px_30px_rgba(212,175,119,0.4)] hover:scale-[1.02]"

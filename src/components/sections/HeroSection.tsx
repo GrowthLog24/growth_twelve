@@ -1,17 +1,17 @@
 import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
 import { CountdownTimer } from "@/components/CountdownTimer";
-import { HERO, GOOGLE_FORM_URL } from "@/data/content";
+import { HERO, GOOGLE_FORM_URL, KAKAO_CHANNEL_URL } from "@/data/content";
 
 export function HeroSection() {
   return (
     <section id="hero" className="snap-section-hero relative overflow-hidden">
-      <Image src="/hero-bg.jpg" alt="더트웰브 부동산 스터디 메인 이미지" fill className="object-cover" priority />
+      <Image src="/hero-bg.jpg" alt="GROWTH12 부동산 커뮤니티 메인 이미지" fill className="object-cover" priority />
       <div className="absolute inset-0 bg-black/70" />
 
       <div className="inner relative z-10 text-center pt-[calc(5rem+4rem+10px)] pb-[calc(5rem+10px)]">
         <div className="hero-item" style={{ animationDelay: "0ms" }}>
-          <div className="inline-block mb-6 px-10 py-1.5 rounded-full text-xs font-semibold tracking-[0.2em] uppercase text-gold border border-gold/30 bg-gold/10 backdrop-blur-sm">
+          <div className="inline-block mb-6 px-10 py-1.5 rounded-full text-xs font-semibold tracking-[0.2em] uppercase text-gold-light border border-gold/60 bg-gold/35 backdrop-blur-sm">
             {HERO.badge}
           </div>
         </div>
@@ -28,10 +28,10 @@ export function HeroSection() {
           <span className="text-gray-200">{HERO.description.light}</span>
         </p>
 
-        <div className="hero-item flex flex-col sm:flex-row justify-center gap-3 mb-8 text-sm text-gray-300" style={{ animationDelay: "360ms" }}>
+        <div className="hero-item flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mb-8 text-base md:text-lg font-semibold text-white" style={{ animationDelay: "360ms" }}>
           {HERO.features.map((f) => (
-            <span key={f} className="flex items-center justify-center gap-1.5">
-              <CheckCircle2 className="text-gold w-4 h-4" /> {f}
+            <span key={f} className="flex items-center justify-center gap-2">
+              <CheckCircle2 className="text-gold w-5 h-5 shrink-0" /> {f}
             </span>
           ))}
         </div>
@@ -42,7 +42,7 @@ export function HeroSection() {
 
         <div className="hero-item flex flex-col sm:flex-row gap-4 justify-center mt-8" style={{ animationDelay: "540ms" }}>
           <a
-            href={GOOGLE_FORM_URL}
+            href={KAKAO_CHANNEL_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="group relative inline-flex items-center justify-center h-14 px-10 text-base font-semibold text-white bg-gold rounded-full overflow-hidden transition-all duration-300 hover:shadow-[0_8px_30px_rgba(212,175,119,0.4)] hover:scale-[1.02]"

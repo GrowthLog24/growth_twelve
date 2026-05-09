@@ -3,7 +3,7 @@
 import { useEffect, useState, useSyncExternalStore } from "react";
 
 function calcTimeLeft() {
-  const targetDate = new Date("2026-04-17T23:59:59").getTime();
+  const targetDate = new Date("2026-05-15T23:59:59").getTime();
   const distance = targetDate - Date.now();
 
   if (distance <= 0) {
@@ -49,7 +49,7 @@ export function MiniTimer() {
 
   return (
     <div className="mini-timer">
-      <span className="mini-timer-label">수퍼 얼리버드 마감까지</span>
+      <span className="mini-timer-label">1기 얼리버드 마감까지</span>
       <span className="mini-timer-time">
         {pad(t.days)}일 {pad(t.hours)}:{pad(t.minutes)}:{pad(t.seconds)}
       </span>

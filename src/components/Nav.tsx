@@ -8,11 +8,11 @@ export default function Nav() {
     <nav className="nav-bar">
       <div className="nav-inner">
         <div className="nav-left">
-          <Link href="/" className="nav-logo" aria-label="THE 12 홈으로 이동">
+          <Link href="/" className="nav-logo" aria-label="GROWTH12 홈으로 이동">
             <span className="nav-logo-image">
               <Image
                 src="/images/the12-logo.png"
-                alt="THE 12 부동산 커뮤니티 로고"
+                alt="GROWTH12 부동산 커뮤니티 로고"
                 fill
                 priority
                 sizes="55px"
@@ -22,10 +22,11 @@ export default function Nav() {
         </div>
 
         <div className="nav-menu">
-          <a href="#intro">소개</a>
-          <a href="#program">프로그램</a>
-          <a href="#leader">리더</a>
-          <a href="#faq">FAQ</a>
+          <a href="#why">Community</a>
+          <a href="#program">License Class</a>
+          <a href="#leader">Leader</a>
+          <a href="#plans">Membership</a>
+          <a href="#ot">OT</a>
         </div>
 
         <div className="nav-right" />

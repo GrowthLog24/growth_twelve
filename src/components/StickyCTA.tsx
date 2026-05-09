@@ -4,8 +4,9 @@ import { useEffect, useState } from "react";
 import { useCountdown } from "@/hooks/useCountdown";
 import { Clock } from "lucide-react";
 
-const TARGET_DATE = "2026-04-17T23:59:59";
-const GOOGLE_FORM_URL = "https://forms.gle/6emzu92WCEXXiAiz5";
+import { GOOGLE_FORM_URL, KAKAO_CHANNEL_URL } from "@/data/content";
+
+const TARGET_DATE = "2026-05-15T23:59:59";
 
 export function StickyCTA() {
   const [isVisible, setIsVisible] = useState(false);
@@ -45,7 +46,7 @@ export function StickyCTA() {
           {/* Countdown */}
           <p className="text-white text-center text-sm font-medium mb-3 flex items-center justify-center gap-2">
             <Clock className="w-4 h-4 text-gold" />
-            수퍼 얼리버드 마감까지
+            1기 얼리버드 마감까지
             <span className="tabular-nums font-bold text-gold">
               {pad(timeLeft.days)}일 {pad(timeLeft.hours)}:{pad(timeLeft.minutes)}:{pad(timeLeft.seconds)}
             </span>
@@ -54,12 +55,12 @@ export function StickyCTA() {
           {/* Buttons */}
           <div className="flex gap-3">
             <a
-              href={GOOGLE_FORM_URL}
+              href={KAKAO_CHANNEL_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="group relative flex-1 inline-flex items-center justify-center h-12 text-base font-semibold text-white bg-gold rounded-full overflow-hidden transition-all duration-300 hover:shadow-[0_8px_30px_rgba(212,175,119,0.4)] hover:scale-[1.02]"
             >
-              <span className="relative z-10">수퍼 얼리버드 신청</span>
+              <span className="relative z-10">1기 등록하기</span>
               <div className="absolute inset-0 bg-gradient-to-r from-gold-light to-gold opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </a>
             <a
@@ -68,7 +69,7 @@ export function StickyCTA() {
               rel="noopener noreferrer"
               className="flex-1 inline-flex items-center justify-center h-12 text-base font-semibold text-white border border-white/30 rounded-full backdrop-blur-sm transition-all duration-300 hover:bg-white hover:text-navy hover:border-white"
             >
-              무료 OT 참석
+              OT 신청하기
             </a>
           </div>
         </div>
