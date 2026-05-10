@@ -22,6 +22,11 @@ export const metadata: Metadata = {
       "17년차 부동산 전문가가 운영하는 부동산 커뮤니티. 1기 모집중.",
     images: ["/og.png"],
   },
+  icons: {
+    icon: [{ url: "/fav_icon.png", type: "image/png" }],
+    shortcut: "/fav_icon.png",
+    apple: "/fav_icon.png",
+  },
   metadataBase: new URL("https://the12.co.kr"),
 };
 
