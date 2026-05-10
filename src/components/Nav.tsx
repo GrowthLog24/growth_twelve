@@ -23,7 +23,7 @@ export default function Nav() {
 
         <div className="nav-menu">
           <a href="#why">Community</a>
-          <a href="#program">License Class</a>
+          <a href="#program">Program</a>
           <a href="#leader">Leader</a>
           <a href="#plans">Membership</a>
           <a href="#ot">OT</a>

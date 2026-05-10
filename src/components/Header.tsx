@@ -8,7 +8,7 @@ import { openKakaoChat } from "@/lib/kakao";
 
 const NAV_ITEMS = [
   { label: "Community", id: "why" },
-  { label: "License Class", id: "program" },
+  { label: "Program", id: "program" },
   { label: "Leader", id: "leader" },
   { label: "Membership", id: "plans" },
   { label: "OT", id: "ot" },
