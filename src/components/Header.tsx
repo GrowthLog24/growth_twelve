@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
-import { KAKAO_CHANNEL_URL } from "@/data/content";
+import { openKakaoChat } from "@/lib/kakao";
 
 const NAV_ITEMS = [
   { label: "Community", id: "why" },
@@ -106,8 +106,7 @@ export function Header() {
           <Button
             size="sm"
             className="bg-gold hover:bg-gold-hover text-white font-bold px-5"
-            render={<a href={KAKAO_CHANNEL_URL} target="_blank" rel="noopener noreferrer" />}
-            nativeButton={false}
+            onClick={openKakaoChat}
           >
             G12 Join
           </Button>
@@ -142,8 +141,10 @@ export function Header() {
             ))}
             <Button
               className="bg-gold hover:bg-gold-hover text-white font-bold mt-2"
-              render={<a href={KAKAO_CHANNEL_URL} target="_blank" rel="noopener noreferrer" />}
-              nativeButton={false}
+              onClick={() => {
+                openKakaoChat();
+                setMenuOpen(false);
+              }}
             >
               G12 Join
             </Button>

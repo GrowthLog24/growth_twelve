@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { KakaoSdkLoader } from "@/components/KakaoSdkLoader";
 
 export const metadata: Metadata = {
   title: "GROWTH12 - 부동산 협력 파트너 커뮤니티",
@@ -46,6 +47,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         {children}
         <ScrollReveal />
+        <KakaoSdkLoader />
       </body>
     </html>
   );

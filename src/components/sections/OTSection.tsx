@@ -1,4 +1,5 @@
-import { OT, GOOGLE_FORM_URL, KAKAO_CHANNEL_URL } from "@/data/content";
+import { OT, GOOGLE_FORM_URL } from "@/data/content";
+import { KakaoChatButton } from "@/components/KakaoChatButton";
 import { renderTitle } from "@/utils/renderTitle";
 
 export function OTSection() {
@@ -49,14 +50,9 @@ export function OTSection() {
             <span className="relative z-10">{OT.cta.primary}</span>
             <div className="absolute inset-0 bg-gradient-to-r from-gold-light to-gold opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </a>
-          <a
-            href={KAKAO_CHANNEL_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center h-14 px-10 text-base font-semibold text-navy border border-navy/30 rounded-full transition-all duration-300 hover:bg-navy hover:text-white hover:border-navy"
-          >
+          <KakaoChatButton className="inline-flex items-center justify-center h-14 px-10 text-base font-semibold text-navy border border-navy/30 rounded-full transition-all duration-300 hover:bg-navy hover:text-white hover:border-navy">
             {OT.cta.secondary}
-          </a>
+          </KakaoChatButton>
         </div>
       </div>
     </section>

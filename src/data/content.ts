@@ -3,8 +3,6 @@
    title 배열의 각 항목은 <br />로 줄바꿈됩니다.
 ──────────────────────────────────────────────────── */
 
-// 1기 등록 CTA — 카카오 채널 (실제 URL 받으면 교체)
-export const KAKAO_CHANNEL_URL = "https://pf.kakao.com/_growth12/chat";
 // OT 신청 폼
 export const GOOGLE_FORM_URL = "https://forms.gle/reyGUNdP8Q8tTEVb7";
 

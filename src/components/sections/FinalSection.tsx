@@ -1,4 +1,5 @@
-import { FINAL, GOOGLE_FORM_URL, KAKAO_CHANNEL_URL } from "@/data/content";
+import { FINAL, GOOGLE_FORM_URL } from "@/data/content";
+import { KakaoChatButton } from "@/components/KakaoChatButton";
 import { renderTitle } from "@/utils/renderTitle";
 
 export function FinalSection() {
@@ -17,15 +18,10 @@ export function FinalSection() {
         </p>
 
         <div data-reveal data-reveal-delay="240" className="flex flex-col sm:flex-row justify-center gap-4">
-          <a
-            href={KAKAO_CHANNEL_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative inline-flex items-center justify-center h-14 px-10 text-base font-semibold text-white bg-gold rounded-full overflow-hidden transition-all duration-300 hover:shadow-[0_8px_30px_rgba(212,175,119,0.4)] hover:scale-[1.02]"
-          >
+          <KakaoChatButton className="group relative inline-flex items-center justify-center h-14 px-10 text-base font-semibold text-white bg-gold rounded-full overflow-hidden transition-all duration-300 hover:shadow-[0_8px_30px_rgba(212,175,119,0.4)] hover:scale-[1.02]">
             <span className="relative z-10">{FINAL.cta.primary}</span>
             <div className="absolute inset-0 bg-gradient-to-r from-gold-light to-gold opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </a>
+          </KakaoChatButton>
           <a
             href={GOOGLE_FORM_URL}
             target="_blank"

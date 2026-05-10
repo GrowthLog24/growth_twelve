@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 import { useCountdown } from "@/hooks/useCountdown";
 import { Clock } from "lucide-react";
 
-import { GOOGLE_FORM_URL, KAKAO_CHANNEL_URL } from "@/data/content";
+import { GOOGLE_FORM_URL } from "@/data/content";
+import { openKakaoChat } from "@/lib/kakao";
 
 const TARGET_DATE = "2026-05-15T23:59:59";
 
@@ -54,15 +55,15 @@ export function StickyCTA() {
 
           {/* Buttons */}
           <div className="flex gap-3">
-            <a
-              href={KAKAO_CHANNEL_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
+              onClick={openKakaoChat}
+              aria-label="카카오톡 1:1 문의 열기"
               className="group relative flex-1 inline-flex items-center justify-center h-12 text-base font-semibold text-white bg-gold rounded-full overflow-hidden transition-all duration-300 hover:shadow-[0_8px_30px_rgba(212,175,119,0.4)] hover:scale-[1.02]"
             >
               <span className="relative z-10">1기 등록하기</span>
               <div className="absolute inset-0 bg-gradient-to-r from-gold-light to-gold opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            </a>
+            </button>
             <a
               href={GOOGLE_FORM_URL}
               target="_blank"

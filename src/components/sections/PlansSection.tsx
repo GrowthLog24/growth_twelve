@@ -1,6 +1,7 @@
 import { Check } from "lucide-react";
-import { PLANS, KAKAO_CHANNEL_URL } from "@/data/content";
+import { PLANS } from "@/data/content";
 import { renderTitle } from "@/utils/renderTitle";
+import { KakaoChatButton } from "@/components/KakaoChatButton";
 
 export function PlansSection() {
   return (
@@ -80,10 +81,7 @@ export function PlansSection() {
                 </ul>
               </div>
 
-              <a
-                href={KAKAO_CHANNEL_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+              <KakaoChatButton
                 className={`mt-6 inline-flex items-center justify-center h-11 rounded-full text-sm font-semibold transition-all duration-300 ${
                   plan.accent
                     ? "bg-gold text-white hover:shadow-[0_8px_24px_rgba(212,175,119,0.35)]"
@@ -91,7 +89,7 @@ export function PlansSection() {
                 }`}
               >
                 1기 등록하기
-              </a>
+              </KakaoChatButton>
             </div>
           ))}
         </div>
