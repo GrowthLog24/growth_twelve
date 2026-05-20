@@ -3,7 +3,7 @@
 import { useEffect, useState, useSyncExternalStore } from "react";
 
 function calcTimeLeft() {
-  const targetDate = new Date("2026-05-15T23:59:59").getTime();
+  const targetDate = new Date("2026-05-29T23:59:59").getTime();
   const distance = targetDate - Date.now();
 
   if (distance <= 0) {

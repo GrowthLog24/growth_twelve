@@ -7,7 +7,7 @@ import { Clock } from "lucide-react";
 import { GOOGLE_FORM_URL } from "@/data/content";
 import { openKakaoChat } from "@/lib/kakao";
 
-const TARGET_DATE = "2026-05-15T23:59:59";
+const TARGET_DATE = "2026-05-29T23:59:59";
 
 export function StickyCTA() {
   const [isVisible, setIsVisible] = useState(false);

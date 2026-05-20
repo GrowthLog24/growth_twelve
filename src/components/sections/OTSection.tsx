@@ -41,18 +41,18 @@ export function OTSection() {
         <p className="text-sm text-gold font-semibold mb-8 break-keep">{OT.earlyBird}</p>
 
         <div data-reveal data-reveal-delay="400" className="flex flex-col sm:flex-row justify-center gap-4">
+          <KakaoChatButton className="group relative inline-flex items-center justify-center h-14 px-10 text-base font-semibold text-white bg-gold rounded-full overflow-hidden transition-all duration-300 hover:shadow-[0_8px_30px_rgba(212,175,119,0.4)] hover:scale-[1.02]">
+            <span className="relative z-10">{OT.cta.primary}</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-gold-light to-gold opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </KakaoChatButton>
           <a
             href={GOOGLE_FORM_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative inline-flex items-center justify-center h-14 px-10 text-base font-semibold text-white bg-gold rounded-full overflow-hidden transition-all duration-300 hover:shadow-[0_8px_30px_rgba(212,175,119,0.4)] hover:scale-[1.02]"
+            className="inline-flex items-center justify-center h-14 px-10 text-base font-semibold text-navy border border-navy/30 rounded-full transition-all duration-300 hover:bg-navy hover:text-white hover:border-navy"
           >
-            <span className="relative z-10">{OT.cta.primary}</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-gold-light to-gold opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </a>
-          <KakaoChatButton className="inline-flex items-center justify-center h-14 px-10 text-base font-semibold text-navy border border-navy/30 rounded-full transition-all duration-300 hover:bg-navy hover:text-white hover:border-navy">
             {OT.cta.secondary}
-          </KakaoChatButton>
+          </a>
         </div>
       </div>
     </section>

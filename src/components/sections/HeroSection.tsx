@@ -21,15 +21,11 @@ export function HeroSection() {
             <span key={i}>{line}{i < HERO.title.length - 1 && <br />}</span>
           ))}
         </h1>
-        <p className="hero-item text-xl md:text-2xl text-white font-bold mb-4 break-keep" style={{ animationDelay: "200ms" }}>
+        <p className="hero-item text-xl md:text-2xl text-white font-bold mb-8 break-keep" style={{ animationDelay: "200ms" }}>
           {HERO.subtitle}
         </p>
-        <p className="hero-item text-base md:text-lg mb-8 break-keep" style={{ animationDelay: "280ms" }}>
-          <span className="text-gold font-semibold">{HERO.description.gold}</span><br />
-          <span className="text-gray-200">{HERO.description.light}</span>
-        </p>
 
-        <div className="hero-item flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mb-8 text-base md:text-lg font-semibold text-white" style={{ animationDelay: "360ms" }}>
+        <div className="hero-item flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mb-8 text-base md:text-lg font-semibold text-white" style={{ animationDelay: "280ms" }}>
           {HERO.features.map((f) => (
             <span key={f} className="flex items-center justify-center gap-2">
               <CheckCircle2 className="text-gold w-5 h-5 shrink-0" /> {f}
@@ -37,11 +33,11 @@ export function HeroSection() {
           ))}
         </div>
 
-        <div className="hero-item" style={{ animationDelay: "440ms" }}>
+        <div className="hero-item" style={{ animationDelay: "360ms" }}>
           <CountdownTimer />
         </div>
 
-        <div className="hero-item flex flex-col sm:flex-row gap-4 justify-center mt-8" style={{ animationDelay: "540ms" }}>
+        <div className="hero-item flex flex-col sm:flex-row gap-4 justify-center mt-8" style={{ animationDelay: "440ms" }}>
           <KakaoChatButton className="group relative inline-flex items-center justify-center h-14 px-10 text-base font-semibold text-white bg-gold rounded-full overflow-hidden transition-all duration-300 hover:shadow-[0_8px_30px_rgba(212,175,119,0.4)] hover:scale-[1.02]">
             <span className="relative z-10">{HERO.cta.primary}</span>
             <div className="absolute inset-0 bg-gradient-to-r from-gold-light to-gold opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

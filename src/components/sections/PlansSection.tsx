@@ -1,7 +1,6 @@
 import { Check } from "lucide-react";
 import { PLANS } from "@/data/content";
 import { renderTitle } from "@/utils/renderTitle";
-import { KakaoChatButton } from "@/components/KakaoChatButton";
 
 export function PlansSection() {
   return (
@@ -50,6 +49,11 @@ export function PlansSection() {
 
               <div className="flex items-baseline gap-2 mb-3">
                 <span className="text-3xl font-extrabold text-gold">{plan.price}</span>
+                {"originalPrice" in plan && plan.originalPrice && (
+                  <span className={`text-sm line-through ${plan.accent ? "text-gray-400" : "text-gray-500"}`}>
+                    {plan.originalPrice}
+                  </span>
+                )}
                 {plan.priceMonthly && (
                   <span className={`text-sm ${plan.accent ? "text-gray-500" : "text-gray-300"}`}>
                     {plan.priceMonthly}
@@ -81,15 +85,6 @@ export function PlansSection() {
                 </ul>
               </div>
 
-              <KakaoChatButton
-                className={`mt-6 inline-flex items-center justify-center h-11 rounded-full text-sm font-semibold transition-all duration-300 ${
-                  plan.accent
-                    ? "bg-gold text-white hover:shadow-[0_8px_24px_rgba(212,175,119,0.35)]"
-                    : "bg-white/10 text-white border border-white/20 hover:bg-white hover:text-navy"
-                }`}
-              >
-                1기 등록하기
-              </KakaoChatButton>
             </div>
           ))}
         </div>
