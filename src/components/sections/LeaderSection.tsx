@@ -73,7 +73,12 @@ export function LeaderSection() {
             <div className="bg-white/5 p-6 rounded-2xl">
               <p className="text-base text-white/90 leading-relaxed break-keep italic font-serif text-center">
                 {LEADER.quote.map((line, i) => (
-                  <span key={i}>&ldquo;{line}&rdquo;{i < LEADER.quote.length - 1 && <br />}</span>
+                  <span key={i}>
+                    {i === 0 && <>&ldquo;</>}
+                    {line}
+                    {i === LEADER.quote.length - 1 && <>&rdquo;</>}
+                    {i < LEADER.quote.length - 1 && <br />}
+                  </span>
                 ))}
               </p>
             </div>

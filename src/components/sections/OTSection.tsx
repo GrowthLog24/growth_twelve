@@ -25,14 +25,36 @@ export function OTSection() {
           ))}
         </p>
 
-        <div data-reveal data-reveal-delay="240" className="flex flex-col gap-2 max-w-md mx-auto mb-6">
-          {OT.schedule.map((s) => (
+        <div data-reveal data-reveal-delay="240" className="grid grid-cols-2 gap-4 max-w-xl mx-auto mb-6">
+          {OT.schedule.map((day) => (
             <div
-              key={s.round}
-              className="border border-gray-200 rounded-lg py-3 px-5 flex justify-between items-center bg-white"
+              key={day.date}
+              className="rounded-xl overflow-hidden border border-gray-200 shadow-sm bg-white"
             >
-              <span className="font-bold text-navy">{s.round}</span>
-              <span className="text-gray-700 text-sm">{s.date}</span>
+              <div className="bg-navy py-4 px-5 text-center">
+                <div className="flex items-baseline gap-2 justify-center">
+                  <span className="text-gold font-extrabold text-3xl tracking-tight">{day.date}</span>
+                  <span className="text-white/60 text-sm font-medium">({day.day})</span>
+                </div>
+              </div>
+              <div className="divide-y divide-gray-100">
+                {day.slots.map((slot) => (
+                  <div key={slot.label} className="py-3 px-4 text-center">
+                    <p className="text-navy font-bold text-sm mb-1.5">
+                      {slot.label} {slot.time}
+                    </p>
+                    <span
+                      className={`inline-block text-xs font-semibold px-2 py-0.5 rounded-full ${
+                        slot.type === "온라인"
+                          ? "bg-blue-50 text-blue-600"
+                          : "bg-gold/10 text-gold"
+                      }`}
+                    >
+                      {slot.type}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
           ))}
         </div>

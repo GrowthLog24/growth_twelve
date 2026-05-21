@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { StickyCTA } from "@/components/StickyCTA";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { WhySection } from "@/components/sections/WhySection";
+import { PersonaSection } from "@/components/sections/PersonaSection";
 import { AttendanceSection } from "@/components/sections/AttendanceSection";
 import { LeaderSection } from "@/components/sections/LeaderSection";
 import { PlansSection } from "@/components/sections/PlansSection";
@@ -17,6 +18,7 @@ export default function Home() {
       <main className="scroll-smooth" style={{ scrollSnapType: "y proximity" }}>
         <HeroSection />
         <WhySection />
+        <PersonaSection />
         <AttendanceSection />
         <LeaderSection />
         <PlansSection />

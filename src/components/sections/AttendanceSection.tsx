@@ -21,7 +21,18 @@ export function AttendanceSection() {
               data-reveal-delay={180 + i * 110}
               className="card card--lg flex flex-col"
             >
-              <h3 className="text-xl font-bold text-navy mb-3">{c.title}</h3>
+              <div className="flex items-center gap-2 mb-3">
+                <h3 className="text-xl font-bold text-navy">{c.title}</h3>
+                {c.tag && (
+                  <span className={`text-xs font-semibold px-2.5 py-0.5 rounded-full ${
+                    c.tag === "오프라인"
+                      ? "bg-navy/10 text-navy"
+                      : "bg-gold/10 text-gold"
+                  }`}>
+                    {c.tag}
+                  </span>
+                )}
+              </div>
               <div className="flex items-start gap-2 text-gold text-sm font-semibold mb-5">
                 <Calendar className="w-4 h-4 mt-0.5 shrink-0" />
                 <span>{c.schedule}</span>
