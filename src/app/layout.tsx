@@ -4,22 +4,22 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { KakaoSdkLoader } from "@/components/KakaoSdkLoader";
 
 export const metadata: Metadata = {
-  title: "GROWTH12 - 부동산 협력 파트너 커뮤니티",
+  title: "G12 - 전문가관리형 공인중개사 스터디",
   description:
-    "커뮤니티와 함께 성장할 부동산 협력 파트너를 모십니다. 17년차 부동산 전문가가 운영하는 강남역 3분거리 라운지 커뮤니티.",
+    "혼자는 힘들어요. 전문가 관리형 스터디로 10월 31일 공인중개사 합격까지 함께 완주합니다. 오프라인(강남역) / 온라인 동시 운영. 1기 모집 중.",
   openGraph: {
-    title: "GROWTH12 - 부동산 협력 파트너 커뮤니티",
+    title: "G12 - 전문가관리형 공인중개사 스터디",
     description:
-      "17년차 부동산 전문가가 운영하는 부동산 커뮤니티. 공인중개사 합격 후 실무 교육·채용 연계까지. 1기 모집중.",
+      "혼자는 힘들어요. 전문가 관리형 스터디로 10월 31일 공인중개사 합격까지 함께 완주합니다. 오프라인(강남역) / 온라인 동시 운영. 1기 모집 중.",
     images: ["/og.png"],
     type: "website",
     locale: "ko_KR",
   },
   twitter: {
     card: "summary_large_image",
-    title: "GROWTH12 - 부동산 협력 파트너 커뮤니티",
+    title: "G12 - 전문가관리형 공인중개사 스터디",
     description:
-      "17년차 부동산 전문가가 운영하는 부동산 커뮤니티. 1기 모집중.",
+      "혼자는 힘들어요. 전문가 관리형 스터디로 10월 31일 공인중개사 합격까지 함께 완주합니다. 오프라인(강남역) / 온라인 동시 운영. 1기 모집 중.",
     images: ["/og.png"],
   },
   icons: {
