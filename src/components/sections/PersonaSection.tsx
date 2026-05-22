@@ -1,4 +1,5 @@
-﻿import { PERSONA } from "@/data/content";
+﻿import { Clock } from "lucide-react";
+import { PERSONA } from "@/data/content";
 
 export function PersonaSection() {
   return (
@@ -18,7 +19,13 @@ export function PersonaSection() {
               data-reveal-delay={100 + i * 100}
               className="card card--dark flex flex-col gap-4"
             >
-              <span className="text-4xl">{item.emoji}</span>
+              {item.emoji === "⏰" ? (
+                <span className="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center">
+                  <Clock className="w-5 h-5 text-gold" strokeWidth={1.5} />
+                </span>
+              ) : (
+                <span className="text-4xl">{item.emoji}</span>
+              )}
 
               <p className="text-white font-bold text-base leading-snug">
                 &ldquo;{item.pain}&rdquo;

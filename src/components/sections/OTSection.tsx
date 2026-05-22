@@ -33,8 +33,8 @@ export function OTSection() {
             >
               <div className="bg-navy py-4 px-5 text-center">
                 <div className="flex items-baseline gap-2 justify-center">
-                  <span className="text-gold font-extrabold text-3xl tracking-tight">{day.date}</span>
-                  <span className="text-white/60 text-sm font-medium">({day.day})</span>
+                  <span className="text-gold font-extrabold text-xl tracking-tight">{day.date}</span>
+                  <span className="text-white/60 text-xs font-medium">({day.day})</span>
                 </div>
               </div>
               <div className="divide-y divide-gray-100">
